@@ -23,6 +23,6 @@
 	//		}
 	// }
 
-	"postCreateCommand": "dotnet restore",
+	"postCreateCommand": "sudo chown -R seluser:seluser ~/.dotnet && dotnet restore",
 	"remoteUser": "seluser"
 }
