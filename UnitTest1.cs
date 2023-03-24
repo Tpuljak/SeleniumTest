@@ -19,7 +19,7 @@ namespace NUnitTestProject1
             vars = new Dictionary<string, object>();
 
             hubUrl = "http://localhost:4444/wd/hub";
-            driver = LocalDriverFactory.CreateInstance(Enums.BrowserType.Chrome, hubUrl);
+            driver = LocalDriverFactory.CreateInstance(Enums.BrowserType.Firefox, hubUrl);
             js = (IJavaScriptExecutor)driver;
         }
 
