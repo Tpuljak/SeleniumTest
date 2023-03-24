@@ -1,16 +1,8 @@
 using NUnit.Framework;
 using NUnitTestProject1.Factories;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Edge;
-using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Remote;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading;
 
 namespace NUnitTestProject1
 {
@@ -27,7 +19,7 @@ namespace NUnitTestProject1
             vars = new Dictionary<string, object>();
 
             hubUrl = "http://localhost:4444/wd/hub";
-            driver = LocalDriverFactory.CreateInstance(Enums.BrowserType.Edge, hubUrl);
+            driver = LocalDriverFactory.CreateInstance(Enums.BrowserType.Chrome, hubUrl);
             js = (IJavaScriptExecutor)driver;
         }
 

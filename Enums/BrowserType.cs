@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace NUnitTestProject1.Enums
+﻿namespace NUnitTestProject1.Enums
 {
     /// <summary>
     /// Enum BrowserType
@@ -13,10 +9,6 @@ namespace NUnitTestProject1.Enums
         /// Google Chrome
         /// </summary>
         Chrome,
-        /// <summary>
-        /// Microsoft Edge
-        /// </summary>
-        Edge,
         /// <summary>
         /// Mozilla Firefox
         /// </summary>
