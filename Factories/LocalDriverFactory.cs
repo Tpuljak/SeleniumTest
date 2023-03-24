@@ -1,13 +1,10 @@
-﻿using Microsoft.Edge.SeleniumTools;
-using NUnitTestProject1.Enums;
+﻿using NUnitTestProject1.Enums;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Opera;
 using OpenQA.Selenium.Remote;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace NUnitTestProject1.Factories
 {
@@ -21,10 +18,6 @@ namespace NUnitTestProject1.Factories
             {
                 case BrowserType.Chrome:
                     driver = new ChromeDriver();
-                    break;
-                case BrowserType.Edge:
-                    var options = new EdgeOptions();
-                    driver = new EdgeDriver(options);
                     break;
                 case BrowserType.Firefox:
                     driver = new FirefoxDriver();
@@ -46,10 +39,6 @@ namespace NUnitTestProject1.Factories
                 case BrowserType.Chrome:
                     ChromeOptions chromeOptions = new ChromeOptions();
                     driver = GetWebDriver(hubUrl, chromeOptions.ToCapabilities());
-                    break;
-                case BrowserType.Edge:
-                    EdgeOptions options = new EdgeOptions();
-                    driver = GetWebDriver(hubUrl, options.ToCapabilities());
                     break;
                 case BrowserType.Firefox:
                     FirefoxOptions firefoxOptions = new FirefoxOptions();

@@ -1,0 +1,34 @@
+{
+	"name": "Selenium Test Devcontainer Example",
+  	"dockerComposeFile": "docker-compose.yml",
+  	"service": "hub",
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"configureZshAsDefaultShell": true,
+			"installOhMyZsh": true,
+			"username": "seluser"
+		},
+		"ghcr.io/devcontainers/features/dotnet": {
+			"version": "7.0"
+		}
+	},
+	"workspaceFolder": "/workspaces/SeleniumTest",
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [5000, 5001],
+	// "portsAttributes": {
+	//		"5001": {
+	//			"protocol": "https"
+	//		}
+	// }
+	"customizations": {
+		"vscode": {
+		      "extensions": [
+			"muhammad-sammy.csharp"
+		      ]
+		    }
+	},
+	"postCreateCommand": "dotnet restore",
+	"remoteUser": "seluser"
+}
