@@ -29,6 +29,6 @@
 		      ]
 		    }
 	},
-	"postCreateCommand": "sudo chown -R seluser:seluser ~/.dotnet && dotnet restore",
+	"postCreateCommand": "dotnet restore",
 	"remoteUser": "seluser"
 }
