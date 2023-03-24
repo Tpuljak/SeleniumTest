@@ -10,7 +10,7 @@
 			"username": "seluser"
 		},
 		"ghcr.io/devcontainers/features/dotnet": {
-			"version": "3.1"
+			"version": "7.0"
 		}
 	},
 	"workspaceFolder": "/workspaces/SeleniumTest",
