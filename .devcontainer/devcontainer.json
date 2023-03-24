@@ -22,7 +22,13 @@
 	//			"protocol": "https"
 	//		}
 	// }
-
+	"customizations": {
+		"vscode": {
+		      "extensions": [
+			"muhammad-sammy.csharp"
+		      ]
+		    }
+	},
 	"postCreateCommand": "sudo chown -R seluser:seluser ~/.dotnet && dotnet restore",
 	"remoteUser": "seluser"
 }
