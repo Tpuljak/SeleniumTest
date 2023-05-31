@@ -69,5 +69,26 @@ namespace NUnitTestProject1
             Actions builder = new Actions(driver);
             builder.MoveToElement(element).Perform();
         }
+
+        [Test]
+        [Parallelizable]
+        public void OpenSTSAndClickAround()
+        {
+            driver.Navigate().GoToUrl("https://www.sts.co.za/");
+            driver.Manage().Window.Maximize();
+
+            System.Threading.Thread.Sleep(3000);
+
+            driver.FindElement(By.CssSelector("#scrollTarget > ul > li:nth-child(6) > a")).Click();
+
+            while (true) {
+                driver.FindElement(By.CssSelector("#filter > ul > li:nth-child(2) > a")).Click();
+                System.Threading.Thread.Sleep(2000);
+                driver.FindElement(By.CssSelector("#filter > ul > li:nth-child(3) > a")).Click();
+                System.Threading.Thread.Sleep(2000);
+                driver.FindElement(By.CssSelector("#filter > ul > li:nth-child(4) > a")).Click();
+                System.Threading.Thread.Sleep(2000);
+            }
+        }
     }
 }

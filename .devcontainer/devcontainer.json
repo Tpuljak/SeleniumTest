@@ -17,8 +17,7 @@
 	"customizations": {
 		"vscode": {
 		      "extensions": [
-				"muhammad-sammy.csharp",
-				"formulahendry.dotnet-test-explorer"
+				"muhammad-sammy.csharp"
 		      ]
 		    }
 	},
